@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFE10CF6-5725-499E-9A88-EA35EE222D9E}</ProjectGuid>
+    <RootNamespace>LaserScan</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>RTC5DLL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bar_CNC2000.cpp" />
+    <ClCompile Include="Bar_LaserControl_Settings.cpp" />
+    <ClCompile Include="Bar_ParameterSettings.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CMSComm.cpp" />
+    <ClCompile Include="DockingBar.cpp" />
+    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="Draw_TaskList.cpp" />
+    <ClCompile Include="Hardware_Initialization.cpp" />
+    <ClCompile Include="Hardware_Optics.cpp" />
+    <ClCompile Include="HardwareSetting_ScanHead.cpp" />
+    <ClCompile Include="HardwareSettings.cpp" />
+    <ClCompile Include="LaserControl.cpp" />
+    <ClCompile Include="LaserControl_Settings.cpp" />
+    <ClCompile Include="LaserControl_Status.cpp" />
+    <ClCompile Include="LaserScan.cpp" />
+    <ClCompile Include="LaserScanDoc.cpp" />
+    <ClCompile Include="LaserScanView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="mydrawShape.cpp" />
+    <ClCompile Include="MyStatusBar.cpp" />
+    <ClCompile Include="ParameterSettings.cpp" />
+    <ClCompile Include="RectPro.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Working_Automatic.cpp" />
+    <ClCompile Include="Working_Processing.cpp" />
+    <ClCompile Include="Working_Wobbel.cpp" />
+    <ClCompile Include="WorkingMode.cpp" />
+    <ClCompile Include="src\AutoHideBar.cpp" />
+    <ClCompile Include="src\DockPageBar.cpp" />
+    <ClCompile Include="src\sizecbar.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Bar_CNC2000.h" />
+    <ClInclude Include="Bar_LaserControl_Settings.h" />
+    <ClInclude Include="Bar_ParameterSettings.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CMSComm.h" />
+    <ClInclude Include="DockingBar.h" />
+    <ClInclude Include="Draw.h" />
+    <ClInclude Include="Draw_TaskList.h" />
+    <ClInclude Include="Hardware_Initialization.h" />
+    <ClInclude Include="Hardware_Optics.h" />
+    <ClInclude Include="HardwareSetting_ScanHead.h" />
+    <ClInclude Include="HardwareSettings.h" />
+    <ClInclude Include="LaserControl.h" />
+    <ClInclude Include="LaserControl_Settings.h" />
+    <ClInclude Include="LaserControl_Status.h" />
+    <ClInclude Include="LaserScan.h" />
+    <ClInclude Include="LaserScanDoc.h" />
+    <ClInclude Include="LaserScanView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="mydrawShape.h" />
+    <ClInclude Include="MyStatusBar.h" />
+    <ClInclude Include="ParameterSettings.h" />
+    <ClInclude Include="RectPro.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Working_Automatic.h" />
+    <ClInclude Include="Working_Processing.h" />
+    <ClInclude Include="Working_Wobbel.h" />
+    <ClInclude Include="WorkingMode.h" />
+    <ClInclude Include="src\AutoHideBar.h" />
+    <ClInclude Include="src\DockPageBar.h" />
+    <ClInclude Include="src\sizecbar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ico00001.ico" />
+    <None Include="res\ico00002.ico" />
+    <None Include="res\ico00003.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\LaserScan.ico" />
+    <None Include="res\LaserScan.rc2" />
+    <None Include="res\LaserScanDoc.ico" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LaserScan.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="LaserScan.rc" _x007B_648A5600-2C6E-101B-82B6-000000000014_x007D_="CMSComm" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

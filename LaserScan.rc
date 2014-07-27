@@ -1,0 +1,1292 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\LaserScan.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WorkingMode DIALOGEX 0, 0, 495, 370
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Working Mode"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_WorkingMode,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL,15,14,107,336
+    CONTROL         "",IDC_STATIC_WorkingMode,"Static",SS_BLACKFRAME,132,14,344,312
+    PUSHBUTTON      "OK",IDC_BUTTON1,425,335,50,14
+END
+
+IDD_Wobbel DIALOGEX 0, 0, 346, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Transversal",IDC_STATIC,21,32,38,8
+    LTEXT           "Longitudinal",IDC_STATIC,21,50,39,8
+    LTEXT           "Freq",IDC_STATIC,21,67,16,8
+    LTEXT           "Mode",IDC_STATIC,21,85,18,8
+    EDITTEXT        IDC_EDIT1,63,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,63,44,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,63,61,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,63,79,40,14,ES_AUTOHSCROLL
+END
+
+IDD_Processing DIALOGEX 0, 0, 346, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "set fly x",IDC_STATIC,20,28,78,30
+    LTEXT           "ScaleX",IDC_STATIC,26,46,22,8
+    EDITTEXT        IDC_EDIT1,50,40,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "set fly y",IDC_STATIC,120,27,78,30
+    LTEXT           "ScaleY",IDC_STATIC,126,45,22,8
+    EDITTEXT        IDC_EDIT2,150,39,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "set fly rot",IDC_STATIC,20,59,267,48
+    LTEXT           "Resolution",IDC_STATIC,26,95,34,8
+    EDITTEXT        IDC_EDIT3,62,89,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "fly return",IDC_STATIC,20,108,268,48
+    LTEXT           "X",IDC_STATIC,26,126,8,8
+    EDITTEXT        IDC_EDIT4,38,120,40,14,ES_AUTOHSCROLL
+    LTEXT           "Y",IDC_STATIC,26,144,8,8
+    EDITTEXT        IDC_EDIT5,38,138,40,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,26,77,8,8
+    EDITTEXT        IDC_EDIT6,32,71,40,14,ES_AUTOHSCROLL
+    LTEXT           "Y",IDC_STATIC,80,77,8,8
+    EDITTEXT        IDC_EDIT7,86,71,40,14,ES_AUTOHSCROLL
+    CONTROL         "Linear",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,16,35,10
+    CONTROL         "Rotary",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,62,16,38,10
+    CONTROL         "Return",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,104,16,38,10
+END
+
+IDD_Automatic DIALOGEX 0, 0, 346, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "auto cal",IDC_STATIC,16,26,102,30
+    LTEXT           "Command",IDC_STATIC,22,44,32,8
+    LTEXT           "HeadNo",IDC_STATIC,124,15,26,8
+    EDITTEXT        IDC_EDIT1,124,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,58,39,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "set hi",IDC_STATIC,16,63,102,84
+    LTEXT           "GalvoGainX",IDC_STATIC,22,81,37,8
+    EDITTEXT        IDC_EDIT3,70,76,40,14,ES_AUTOHSCROLL
+    LTEXT           "GalvoGainY",IDC_STATIC,22,100,37,8
+    EDITTEXT        IDC_EDIT4,70,92,40,14,ES_AUTOHSCROLL
+    LTEXT           "GalvoOffsetX",IDC_STATIC,22,116,44,8
+    LTEXT           "GalvoOffsetY",IDC_STATIC,22,135,44,8
+    EDITTEXT        IDC_EDIT5,70,111,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,70,129,40,14,ES_AUTOHSCROLL
+    CONTROL         "Automatic",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,15,48,10
+    CONTROL         "Specific",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,64,15,40,10
+    LTEXT           "静态",IDC_STATIC1,143,103,51,24
+    LTEXT           "ErrorCode:",IDC_STATIC,141,89,36,8
+END
+
+IDD_Optics DIALOGEX 0, 0, 346, 263
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Optics"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Objective",IDC_STATIC,30,15,44,10
+    EDITTEXT        IDC_EDIT1,29,28,291,13,ES_AUTOHSCROLL
+    LTEXT           "Correction File",IDC_STATIC,30,46,60,10
+    GROUPBOX        "Calibration Factor",IDC_STATIC,29,59,289,33
+    GROUPBOX        "Marking Area Size",IDC_STATIC,29,97,289,33
+    GROUPBOX        "Offset",IDC_STATIC,29,137,289,35
+    GROUPBOX        "Coordinate System Rotation Angle",IDC_STATIC,29,174,289,35
+    GROUPBOX        "Home Position",IDC_STATIC,29,212,289,35
+END
+
+IDD_Initialization DIALOGEX 0, 0, 343, 267
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Initialization"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RADIOBUTTON     "Radio1",IDC_RADIO1,106,47,10,14
+    RADIOBUTTON     "Radio1",IDC_RADIO2,127,47,10,14
+    RADIOBUTTON     "Radio1",IDC_RADIO3,148,47,8,14
+    RADIOBUTTON     "Radio1",IDC_RADIO4,167,47,8,14
+    RADIOBUTTON     "Radio1",IDC_RADIO5,186,47,9,14
+    RADIOBUTTON     "Radio1",IDC_RADIO6,206,47,10,14
+    RADIOBUTTON     "Radio1",IDC_RADIO7,227,47,9,14
+    GROUPBOX        "Initialization Satus",IDC_STATIC_Initialization,47,29,265,48
+    RADIOBUTTON     "Radio1",1010,247,47,9,14
+    GROUPBOX        "Description",IDC_Description,47,87,262,162
+    LTEXT           "静态",IDC_STATIC_Description,55,98,248,149,NOT WS_GROUP
+END
+
+IDD_HardwareSettings_ScanHead DIALOGEX 0, 0, 343, 267
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "ScanHead Status"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Position Acknowledge of X",IDC_STATIC_Px,52,35,84,8
+    LTEXT           "Position Acknowledge of Y",IDC_STATIC_Py,52,51,84,8
+    LTEXT           "Temperature Status",IDC_STATIC_Ts,52,67,65,8
+    LTEXT           "Power Status",IDC_STATIC_Ps,52,83,44,8
+    LTEXT           "静态",IDC_STATIC_Px_Error,176,35,33,8,NOT WS_GROUP
+    LTEXT           "静态",IDC_STATIC_Py_Error,176,52,33,8,NOT WS_GROUP
+    LTEXT           "静态",IDC_STATIC_Ts_Error,176,69,33,8,NOT WS_GROUP
+    LTEXT           "静态",IDC_STATIC_Ps_Error,176,86,33,8,NOT WS_GROUP
+END
+
+IDD_HardwareSettings DIALOGEX 0, 0, 495, 370
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hardware Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_Hardware,"Static",SS_BLACKFRAME,132,14,344,337
+    CONTROL         "",IDC_TREE_Hardware,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,15,14,107,336
+END
+
+IDD_ParameterSettings DIALOGEX 0, 0, 495, 370
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameter Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Laser Delay",IDC_STATIC1_LaserDelay,31,10,417,56
+    LTEXT           "LaserOn Delay",IDC_STATIC2_LaserOnDelay,44,32,55,11
+    LTEXT           "LaserOff Delay",IDC_STATIC3_LaserOffDelay,44,46,55,12
+    EDITTEXT        IDC_EDIT1_LaserOnDelay,106,27,75,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2_LaserOffDelay,106,42,75,14,ES_AUTOHSCROLL
+    GROUPBOX        "Scanner Delay",IDC_STATIC7_ScannerDelay,32,127,418,120
+    LTEXT           "Jump Delay",IDC_STATIC4_JumpDelay,46,148,55,12
+    EDITTEXT        IDC_EDIT3_JumpDelay,108,144,75,14,ES_AUTOHSCROLL
+    LTEXT           "Mark Delay",IDC_STATIC5_MarkDelay,46,163,55,12
+    EDITTEXT        IDC_EDIT4_MarkDelay,108,159,75,14,ES_AUTOHSCROLL
+    LTEXT           "Polygon Delay",IDC_STATIC6_PolygonDelay,46,178,55,12
+    EDITTEXT        IDC_EDIT5_PolygonDelay,108,174,75,14,ES_AUTOHSCROLL
+    GROUPBOX        "Speed",IDC_STATIC8_Speed,31,67,419,56
+    LTEXT           "Jump Speed",IDC_STATIC9_JumpSpeed,45,85,55,11
+    EDITTEXT        IDC_EDIT6_JumpSpeed,106,80,75,14,ES_AUTOHSCROLL
+    LTEXT           "Mark Speed",IDC_STATIC10_MarkSpeed,46,101,55,11
+    EDITTEXT        IDC_EDIT7_MarkSpeed,107,96,75,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_BUTTON1,147,347,50,16
+    PUSHBUTTON      "Cancel",IDC_BUTTON2,333,347,50,16
+    LTEXT           "Edge Threshold",IDC_STATIC11_EdgeThreshold,46,192,55,12
+    EDITTEXT        IDC_EDIT8_EdgeThreshold,108,189,75,14,ES_AUTOHSCROLL
+    LTEXT           "Min Jump Delay",IDC_STATIC12_MinJumpDelay,46,207,55,12
+    EDITTEXT        IDC_EDIT9_MinJumpDelay,108,204,75,15,ES_AUTOHSCROLL
+    LTEXT           "Jump Length Limit",IDC_STATIC13_JumpLengthLimit,46,221,64,12
+    EDITTEXT        IDC_EDIT10_JumpLengthLimit,108,220,75,15,ES_AUTOHSCROLL
+    CONTROL         "variable Polygon Delay",IDC_CHECK1_variablePolygonDelay,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,163,83,16
+    CONTROL         "use polygon table #1",IDC_CHECK2_UsePolygonTable,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,308,162,83,16
+    CONTROL         "Move Z-axis direct to the Endposition during 3D Jump",IDC_CHECK3_MoveZAxis,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,189,188,16
+    LTEXT           "μs",IDC_STATIC2_LaserOnDelay_unit,187,30,8,11
+    LTEXT           "μs",IDC_STATIC4_JumpDelay_unit,188,148,8,8
+    LTEXT           "μs",IDC_STATIC3_LaserOffDelay_unit,187,42,8,11
+    LTEXT           "μs",IDC_STATIC5_MarkDelay_unit,188,161,8,11
+    LTEXT           "μs",IDC_STATIC6_PolygonDelay_unit,188,178,8,9
+    LTEXT           "mm/s",IDC_STATIC9_JumpSpeed_unit,185,80,26,12
+    LTEXT           "mm/s",IDC_STATIC10_MarkSpeed_unit,187,96,26,10
+    LTEXT           "μs",IDC_STATIC6_PolygonDelay_unit2,188,194,8,9
+    LTEXT           "μs",IDC_STATIC6_PolygonDelay_unit3,188,208,8,9
+    LTEXT           "μs",IDC_STATIC6_PolygonDelay_unit4,188,222,8,9
+END
+
+IDD_LaserControl_Settings DIALOGEX 0, 0, 346, 326
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Laser Input Signal Mode",IDC_STATIC_LaserInputSignalMode,19,73,150,75
+    GROUPBOX        "Laser Input Signal",IDC_STATIC_LaserInputSignal,17,148,152,81
+    GROUPBOX        "Stanby Signal",IDC_STATIC_StanbySignal,17,229,152,46
+    GROUPBOX        "Laser Control",IDC_STATIC_LaserControl,182,74,147,74
+    GROUPBOX        "Laser Output",IDC_STATIC_Laser,20,16,310,56
+    EDITTEXT        IDC_EDIT_LaserPower,95,26,48,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Laser Power",IDC_STATIC_LaserPower,27,29,40,8
+    EDITTEXT        IDC_EDIT_LaserSetpoint,95,40,48,13,ES_AUTOHSCROLL
+    LTEXT           "Laser Point",IDC_STATIC_LaserSetpoint_Unit,27,43,40,8
+    EDITTEXT        IDC_EDIT_LaserFrequency,95,55,48,13,ES_AUTOHSCROLL
+    LTEXT           "Laser Frequency",IDC_STATIC_LaserFrequency,27,57,57,8
+    GROUPBOX        "Analog/Digital Output",IDC_STATIC_ADOutput,182,231,150,43
+    GROUPBOX        "Auto Laser Control",IDC_STATIC_AutoLaserControl,182,149,148,80
+    CONTROL         "CO2 mode",IDC_RADIO_LaserCO2mode,"Button",BS_AUTORADIOBUTTON,35,87,56,11
+    CONTROL         "YAG mode 2",IDC_RADIO_LaserYAG2mode,"Button",BS_AUTORADIOBUTTON,35,112,56,11
+    CONTROL         "YAG mode 3",IDC_RADIO_LaserYAG3mode,"Button",BS_AUTORADIOBUTTON,35,125,56,9
+    CONTROL         "YAG mode 1",IDC_RADIO_LaserModeYAG2,"Button",BS_AUTORADIOBUTTON,35,100,56,11
+    CONTROL         "Laser mode 4",IDC_RADIO_Lasermode4,"Button",BS_AUTORADIOBUTTON,99,87,56,11
+    CONTROL         "YAG mode 5",IDC_RADIO_LaserYAG5mode,"Button",BS_AUTORADIOBUTTON,99,100,56,11
+    CONTROL         "Laser mode 6",IDC_RADIO_LaserYAG3mode2,"Button",BS_AUTORADIOBUTTON,99,113,56,11
+    LTEXT           "HalfPeriod",IDC_STATIC_HalfPeriod,26,159,33,9
+    LTEXT           "PulseLength",IDC_STATIC_PulseLength,26,185,39,9
+    EDITTEXT        IDC_EDIT_HalfPeriod,95,156,48,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PulseLength,95,184,48,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FrequencySignal,95,169,48,13,ES_AUTOHSCROLL
+    LTEXT           "Frequency",IDC_STATIC_Frequency,26,171,39,9
+    LTEXT           "FirstPulseKillerLength",IDC_STATIC_FirstPulseKillerLength,26,200,67,9
+    EDITTEXT        IDC_EDIT_FirstPulseKillerLength,95,198,48,13,ES_AUTOHSCROLL
+    LTEXT           "Standby HalfPeriod",IDC_STATIC_Standby_HalfPeriod,25,239,63,8
+    EDITTEXT        IDC_EDIT_StanbyHalfPeriod,95,235,48,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_StandbyFrequency,95,247,48,13,ES_AUTOHSCROLL
+    LTEXT           "Frequency",IDC_STATIC_Frequency2,27,250,39,9
+    LTEXT           "Finish Laser Pulser after Laser On",IDC_STATIC_FLPALO,189,94,108,8
+    LTEXT           "180 Degree Phaser Shift of Laser Signal",IDC_STATIC_180DPSOL,189,103,108,8
+    LTEXT           "Disable Laser Signal",IDC_STATIC_DLS,189,112,108,8
+    LTEXT           "Set LaserOn Signal Low Activation",IDC_STATIC_SLSLA,189,120,111,8
+    LTEXT           "Set Laser1/2 Signal Low Activation",IDC_STATIC,189,129,112,8
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,92,10,8
+    CONTROL         "Check1",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,101,10,8
+    CONTROL         "Check1",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,111,10,8
+    CONTROL         "Check1",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,120,10,8
+    CONTROL         "Check1",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,129,10,8
+    LTEXT           "Q switch delay",IDC_STATIC_Qswitchdelay,27,214,50,9
+    EDITTEXT        IDC_EDIT_QSwitchDelay,95,213,48,13,ES_AUTOHSCROLL
+    GROUPBOX        "Serial Port Settings",IDC_STATIC_SerialPortSettings,18,276,272,36
+    LTEXT           "Serial Port",IDC_STATIC_SerialPortNumber,26,288,33,8
+    EDITTEXT        IDC_EDIT_SerialpPort,95,284,48,13,ES_AUTOHSCROLL
+    LTEXT           "Parameters",IDC_STATIC_SerialPort_Parameters,27,301,37,8
+    EDITTEXT        IDC_EDIT_SerialPortParameters,95,298,48,13,ES_AUTOHSCROLL
+    LTEXT           "String for Manual Send",IDC_STATIC_SerialPort_StringManualSend,157,287,74,8
+    EDITTEXT        IDC_EDIT_SerialpPort_StringManualSend,234,284,48,13,ES_AUTOHSCROLL
+    LTEXT           "Response",IDC_STATIC_Serialport_Response,158,300,37,8
+    EDITTEXT        IDC_EDIT_SerialPort_Response,234,297,48,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_ManualSend,292,283,41,14
+    CONTROL         "",IDC_SerialPort_MSCOMM,
+                    "{648A5600-2C6E-101B-82B6-000000000014}",WS_TABSTOP,257,34,25,23
+    EDITTEXT        IDC_EDIT_StandbyPulseLength,95,260,48,13,ES_AUTOHSCROLL
+    LTEXT           "PulseLength",IDC_STATIC_StandbyPulseLength,27,261,39,9
+    LTEXT           "W",IDC_STATIC_LaserPower_Unit,150,28,8,8
+    LTEXT           "%",IDC_STATIC_LaserSetpoint2,150,43,8,8
+    LTEXT           "Hz",IDC_STATIC_LaserFrequency_Unit,150,57,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit,150,158,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit2,150,186,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit3,150,200,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit4,150,217,8,8
+    LTEXT           "Hz",IDC_STATIC_LaserFrequency_Unit2,150,172,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit5,150,238,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit6,150,262,8,8
+    LTEXT           "Hz",IDC_STATIC_LaserFrequency_Unit3,150,249,8,8
+END
+
+IDD_LaserControl DIALOGEX 0, 0, 495, 370
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LaserControl"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_LaserControl,"Static",SS_BLACKFRAME,132,14,344,335
+    CONTROL         "",IDC_TREE_LaserControl,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,15,14,107,334
+    PUSHBUTTON      "Accept",IDC_LaserControl_Accept,351,351,50,12
+    PUSHBUTTON      "Exit",IDC_LaserControl_Exit,415,351,49,12
+END
+
+IDD_LaserControl_Status DIALOGEX 0, 0, 346, 281
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Internal Frequency",IDC_STATIC,41,80,61,10
+    LTEXT           "Minimum Frequency",IDC_STATIC,41,90,64,10
+    LTEXT           "Maximum Frequency",IDC_STATIC,41,101,65,10
+    PUSHBUTTON      "Reset Error",IDC_BUTTON_ResetError,239,51,44,12
+    GROUPBOX        "Status",IDC_STATIC_LaserStatus,21,14,298,246
+    GROUPBOX        "Temperature",IDC_STATIC_LaserTemperature,33,118,268,47
+    GROUPBOX        "BackReflection",IDC_STATIC_BackReflection,33,169,268,27
+    GROUPBOX        "Model Number",IDC_STATIC_ModelNumber,33,199,268,27
+    GROUPBOX        "Status Showing",IDC_STATIC_StatusShowing,33,25,268,45
+    GROUPBOX        "Frequency",IDC_STATIC_LaserFrequencyRead,33,69,268,45
+    LTEXT           "Case Temperature",IDC_STATIC_CaseTemperature,41,131,61,10
+    LTEXT           "Head Temperature",IDC_STATIC_HeadTemperature,41,142,61,10
+    LTEXT           "Lower Deck Temperature",IDC_STATIC_LowerDeckTemp,41,152,82,8
+    GROUPBOX        "Firmware Version",IDC_STATIC_FirmwareVersion,33,229,268,26
+    EDITTEXT        IDC_LaserControl_StatusGeneral,156,40,52,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SerialPort_MSCOMM_Status,
+                    "{648A5600-2C6E-101B-82B6-000000000014}",WS_TABSTOP,199,7,25,23
+    EDITTEXT        IDC_Status_InternalFrequency,156,78,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Status_MinFrequency,156,89,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Status_MaxFrequency,156,100,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Status_CaseTemp,156,129,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Status_HeadTemp,156,140,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Status_LowDeckTemp,156,151,53,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Back Reflection",IDC_STATIC_BackReflectinShow,43,181,51,8
+    LTEXT           "Model Number",IDC_STATIC_ModelNumShow,42,211,46,8
+    EDITTEXT        IDC_Status_Error,156,52,52,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Error",IDC_STATIC_Error,57,53,16,8
+    LTEXT           "Status General",IDC_STATIC_StatusGeneral,50,42,53,8
+    LTEXT           "Firmware Version",IDC_STATIC_FirewareVerionShow,41,240,57,10
+    EDITTEXT        IDC_Status_BackReflection,156,179,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Status_ModelNumber,156,208,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Status_FirmwareVersion,156,237,53,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_Draw_TaskList DIALOGEX 500, 0, 237, 369
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Draw_TaskList"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,82,348,50,14
+    PUSHBUTTON      "取消",IDCANCEL,180,348,50,14
+    CONTROL         "",IDC_Draw_Tree,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,223,342
+END
+
+IDD_Draw DIALOGEX 0, 0, 556, 370
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Draw"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Plot",IDC_Plot,"Button",BS_AUTORADIOBUTTON | WS_GROUP,45,45,28,10
+    CONTROL         "Line",IDC_Line,"Button",BS_AUTORADIOBUTTON,45,83,29,10
+    CONTROL         "Circle",IDC_Arc,"Button",BS_AUTORADIOBUTTON,46,133,33,10
+    CONTROL         "Rectangle",IDC_Rectangle,"Button",BS_AUTORADIOBUTTON,45,188,48,10
+    CONTROL         "Jump",IDC_Line_Jump,"Button",BS_AUTORADIOBUTTON | WS_GROUP,168,75,28,8
+    CONTROL         "Mark",IDC_Line_Mark,"Button",BS_AUTORADIOBUTTON,168,91,28,8
+    CONTROL         "Unfilled",IDC_Circle_Unfilled,"Button",BS_AUTORADIOBUTTON | WS_GROUP,167,118,39,8
+    CONTROL         "Filled",IDC_Circle_Filled,"Button",BS_AUTORADIOBUTTON,168,129,32,10
+    CONTROL         "Unfilled",IDC_Rectangule_Unfilled,"Button",BS_AUTORADIOBUTTON | WS_GROUP,167,174,39,10
+    CONTROL         "X_Filled",IDC_Rectangule_X_Filled,"Button",BS_AUTORADIOBUTTON,167,188,40,10
+    CONTROL         "Y_Filled",IDC_Rectangule_Y_Filled,"Button",BS_AUTORADIOBUTTON,167,204,40,10
+    GROUPBOX        "Operation",IDC_STATIC,19,14,519,335
+    GROUPBOX        "Plot",IDC_STATIC_Plot,153,28,373,38
+    GROUPBOX        "Line",IDC_STATIC_Line,153,65,373,42
+    GROUPBOX        "Circle",IDC_STATIC_Arc,153,106,372,58
+    GROUPBOX        "Rectangle",IDC_STATIC_Rectangle,153,163,372,58
+    LTEXT           "Jump To:",IDC_STATIC,169,36,30,8
+    EDITTEXT        IDC_Plot_X,245,37,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Plot_Y,246,50,44,12,ES_AUTOHSCROLL
+    RTEXT           "X:",IDC_STATIC,231,37,8,9
+    RTEXT           "Y:",IDC_STATIC,231,52,8,8
+    RTEXT           "Duration:",IDC_STATIC,313,52,30,10
+    EDITTEXT        IDC_Plot_Duration,347,50,45,12,ES_AUTOHSCROLL
+    LTEXT           "us",IDC_STATIC,400,52,8,11
+    LTEXT           "mm",IDC_STATIC,295,37,12,9
+    LTEXT           "mm",IDC_STATIC,295,52,12,9
+    EDITTEXT        IDC_Line_StartX,245,73,45,14,ES_AUTOHSCROLL
+    RTEXT           "StartX:",IDC_STATIC,212,75,27,12
+    RTEXT           "StartY:",IDC_STATIC,213,92,26,9
+    EDITTEXT        IDC_Line_StartY,245,89,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Line_EndX,349,73,45,14,ES_AUTOHSCROLL
+    RTEXT           "EndX:",IDC_STATIC,323,76,22,8
+    RTEXT           "EndY:",IDC_STATIC,323,92,22,8
+    EDITTEXT        IDC_Line_EndY,349,89,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Line_Duration,456,89,45,14,ES_AUTOHSCROLL
+    RTEXT           "Duration:",IDC_STATIC,416,93,35,8
+    LTEXT           "mm",IDC_STATIC,295,76,12,9
+    LTEXT           "mm",IDC_STATIC,398,76,12,9
+    LTEXT           "mm",IDC_STATIC,295,92,12,9
+    LTEXT           "mm",IDC_STATIC,398,92,12,9
+    LTEXT           "us",IDC_STATIC,503,93,8,8
+    EDITTEXT        IDC_Arc_StartX,246,114,45,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Arc_StartY,246,130,45,15,ES_AUTOHSCROLL
+    RTEXT           "StartX:",IDC_STATIC,211,117,28,8
+    RTEXT           "StartY:",IDC_STATIC,212,133,28,8
+    RTEXT           "CenterX:",IDC_STATIC,311,115,34,8
+    EDITTEXT        IDC_Arc_CenterX,349,113,45,15,ES_AUTOHSCROLL
+    RTEXT           "Angle :",IDC_STATIC,212,150,28,8
+    EDITTEXT        IDC_Arc_Angle,246,146,45,15,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,295,116,12,9
+    LTEXT           "mm",IDC_STATIC,398,116,12,9
+    LTEXT           "degree",IDC_STATIC,296,150,23,8
+    GROUPBOX        "Draw",IDC_STATIC,29,24,97,196
+    PUSHBUTTON      "Implement",IDC_Implement,475,320,51,14
+    PUSHBUTTON      "Add",IDC_Add,476,274,50,14
+    PUSHBUTTON      "Remove",IDC_Remove,476,296,50,14
+    RTEXT           "CenterY:",IDC_STATIC,312,132,34,8
+    EDITTEXT        IDC_Arc_CenterY,350,129,45,15,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,398,132,12,9
+    EDITTEXT        IDC_Rec_StartX,245,171,45,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Rec_StartY,245,187,45,15,ES_AUTOHSCROLL
+    RTEXT           "StartX:",IDC_STATIC,211,175,28,8
+    RTEXT           "StartY:",IDC_STATIC,211,189,28,8
+    RTEXT           "EndX:",IDC_STATIC,311,173,34,8
+    EDITTEXT        IDC_Rec_EndX,349,171,45,15,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,295,174,12,9
+    LTEXT           "mm",IDC_STATIC,295,189,12,8
+    LTEXT           "mm",IDC_STATIC,398,174,12,9
+    RTEXT           "EndY:",IDC_STATIC,311,189,34,8
+    EDITTEXT        IDC_Rec_EndY,349,187,45,15,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,398,189,12,9
+    LTEXT           "mm",IDC_STATIC,295,133,12,9
+    PUSHBUTTON      "Laser On",IDC_LaserOn,37,289,44,14
+    CONTROL         "",IDC_Draw_MSCOMM,
+                    "{648A5600-2C6E-101B-82B6-000000000014}",WS_TABSTOP,498,33,25,23
+    PUSHBUTTON      "Modulation",IDC_Modulation,38,306,42,13
+    PUSHBUTTON      "Exit",IDC_Exit,476,345,49,12
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,155,256,123,15
+END
+
+IDD_Bar_ParameterSettings DIALOGEX 0, 0, 205, 370
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Laser Delay",IDC_STATIC1_LaserDelay,17,10,175,56
+    LTEXT           "LaserOn Delay",IDC_STATIC2_LaserOnDelay,27,32,55,11
+    LTEXT           "LaserOff Delay",IDC_STATIC3_LaserOffDelay,27,46,55,12
+    EDITTEXT        IDC_EDIT1_LaserOnDelay,89,27,75,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2_LaserOffDelay,89,42,75,14,ES_AUTOHSCROLL
+    GROUPBOX        "Scanner Delay",IDC_STATIC7_ScannerDelay,18,127,175,161
+    LTEXT           "Jump Delay",IDC_STATIC4_JumpDelay,26,148,55,12
+    EDITTEXT        IDC_EDIT3_JumpDelay,88,144,75,14,ES_AUTOHSCROLL
+    LTEXT           "Mark Delay",IDC_STATIC5_MarkDelay,26,163,55,12
+    EDITTEXT        IDC_EDIT4_MarkDelay,88,159,75,14,ES_AUTOHSCROLL
+    LTEXT           "Polygon Delay",IDC_STATIC6_PolygonDelay,26,178,55,12
+    EDITTEXT        IDC_EDIT5_PolygonDelay,88,174,75,14,ES_AUTOHSCROLL
+    GROUPBOX        "Speed",IDC_STATIC8_Speed,17,67,175,56
+    LTEXT           "Jump Speed",IDC_STATIC9_JumpSpeed,26,85,55,11
+    EDITTEXT        IDC_EDIT6_JumpSpeed,87,80,75,14,ES_AUTOHSCROLL
+    LTEXT           "Mark Speed",IDC_STATIC10_MarkSpeed,27,101,55,11
+    EDITTEXT        IDC_EDIT7_MarkSpeed,88,96,75,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_BUTTON1,147,347,50,16
+    PUSHBUTTON      "Cancel",IDC_BUTTON2,148,347,50,16
+    LTEXT           "Edge Threshold",IDC_STATIC11_EdgeThreshold,26,192,55,12
+    EDITTEXT        IDC_EDIT8_EdgeThreshold,88,189,75,14,ES_AUTOHSCROLL
+    LTEXT           "Min Jump Delay",IDC_STATIC12_MinJumpDelay,26,207,55,12
+    EDITTEXT        IDC_EDIT9_MinJumpDelay,88,204,75,15,ES_AUTOHSCROLL
+    LTEXT           "Jump Length Limit",IDC_STATIC13_JumpLengthLimit,26,221,64,12
+    EDITTEXT        IDC_EDIT10_JumpLengthLimit,88,220,75,15,ES_AUTOHSCROLL
+    CONTROL         "variable Polygon Delay",IDC_CHECK1_variablePolygonDelay,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,242,83,16
+    CONTROL         "use polygon table #1",IDC_CHECK2_UsePolygonTable,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,255,83,16
+    CONTROL         "Move Z-axis direct to the Endposition during 3D Jump",IDC_CHECK3_MoveZAxis,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,266,130,16
+    LTEXT           "μs",IDC_STATIC2_LaserOnDelay_unit,170,30,8,11
+    LTEXT           "μs",IDC_STATIC4_JumpDelay_unit,168,148,8,8
+    LTEXT           "μs",IDC_STATIC3_LaserOffDelay_unit,170,42,8,11
+    LTEXT           "μs",IDC_STATIC5_MarkDelay_unit,168,161,8,11
+    LTEXT           "μs",IDC_STATIC6_PolygonDelay_unit,168,178,8,9
+    LTEXT           "mm/s",IDC_STATIC9_JumpSpeed_unit,166,80,26,12
+    LTEXT           "mm/s",IDC_STATIC10_MarkSpeed_unit,168,96,26,10
+    LTEXT           "μs",IDC_STATIC6_PolygonDelay_unit2,168,194,8,9
+    LTEXT           "μs",IDC_STATIC6_PolygonDelay_unit3,168,208,8,9
+    LTEXT           "μs",IDC_STATIC6_PolygonDelay_unit4,168,222,8,9
+END
+
+IDD_Bar_LaserControl_Settings DIALOGEX 0, 0, 187, 394
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Laser Input Signal Mode",IDC_STATIC_LaserInputSignalMode,19,73,150,75
+    GROUPBOX        "Laser Input Signal",IDC_STATIC_LaserInputSignal,17,148,152,81
+    GROUPBOX        "Stanby Signal",IDC_STATIC_StanbySignal,17,229,152,46
+    GROUPBOX        "Laser Output",IDC_STATIC_Laser,20,16,149,56
+    EDITTEXT        IDC_EDIT_LaserPower,95,26,48,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Laser Power",IDC_STATIC_LaserPower,27,29,40,8
+    EDITTEXT        IDC_EDIT_LaserSetpoint,95,40,48,13,ES_AUTOHSCROLL
+    LTEXT           "Laser Point",IDC_STATIC_LaserSetpoint_Unit,27,43,40,8
+    EDITTEXT        IDC_EDIT_LaserFrequency,95,55,48,13,ES_AUTOHSCROLL
+    LTEXT           "Laser Frequency",IDC_STATIC_LaserFrequency,27,57,57,8
+    CONTROL         "CO2 mode",IDC_RADIO_LaserCO2mode,"Button",BS_AUTORADIOBUTTON,35,87,56,11
+    CONTROL         "YAG mode 2",IDC_RADIO_LaserYAG2mode,"Button",BS_AUTORADIOBUTTON,35,112,56,11
+    CONTROL         "YAG mode 3",IDC_RADIO_LaserYAG3mode,"Button",BS_AUTORADIOBUTTON,35,125,56,9
+    CONTROL         "YAG mode 1",IDC_RADIO_LaserModeYAG2,"Button",BS_AUTORADIOBUTTON,35,100,56,11
+    CONTROL         "Laser mode 4",IDC_RADIO_Lasermode4,"Button",BS_AUTORADIOBUTTON,99,87,56,11
+    CONTROL         "YAG mode 5",IDC_RADIO_LaserYAG5mode,"Button",BS_AUTORADIOBUTTON,99,100,56,11
+    CONTROL         "Laser mode 6",IDC_RADIO_LaserYAG3mode2,"Button",BS_AUTORADIOBUTTON,99,113,56,11
+    LTEXT           "HalfPeriod",IDC_STATIC_HalfPeriod,26,159,33,9
+    LTEXT           "PulseLength",IDC_STATIC_PulseLength,26,185,39,9
+    EDITTEXT        IDC_EDIT_HalfPeriod,95,156,48,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PulseLength,95,184,48,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FrequencySignal,95,169,48,13,ES_AUTOHSCROLL
+    LTEXT           "Frequency",IDC_STATIC_Frequency,26,171,39,9
+    LTEXT           "FirstPulseKillerLength",IDC_STATIC_FirstPulseKillerLength,26,200,67,9
+    EDITTEXT        IDC_EDIT_FirstPulseKillerLength,95,198,48,13,ES_AUTOHSCROLL
+    LTEXT           "Standby HalfPeriod",IDC_STATIC_Standby_HalfPeriod,25,239,63,8
+    EDITTEXT        IDC_EDIT_StanbyHalfPeriod,95,235,48,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_StandbyFrequency,95,247,48,13,ES_AUTOHSCROLL
+    LTEXT           "Frequency",IDC_STATIC_Frequency2,27,250,39,9
+    LTEXT           "Q switch delay",IDC_STATIC_Qswitchdelay,27,214,50,9
+    EDITTEXT        IDC_EDIT_QSwitchDelay,95,213,48,13,ES_AUTOHSCROLL
+    GROUPBOX        "Serial Port Settings",IDC_STATIC_SerialPortSettings,18,295,151,58
+    LTEXT           "Serial Port",IDC_STATIC_SerialPortNumber,26,288,33,8
+    EDITTEXT        IDC_EDIT_SerialpPort,95,284,48,13,ES_AUTOHSCROLL
+    LTEXT           "Parameters",IDC_STATIC_SerialPort_Parameters,27,301,37,8
+    EDITTEXT        IDC_EDIT_SerialPortParameters,95,298,48,13,ES_AUTOHSCROLL
+    LTEXT           "String for Manual Send",IDC_STATIC_SerialPort_StringManualSend,25,313,74,8
+    EDITTEXT        IDC_EDIT_SerialpPort_StringManualSend,102,311,48,13,ES_AUTOHSCROLL
+    LTEXT           "Response",IDC_STATIC_Serialport_Response,26,327,37,8
+    EDITTEXT        IDC_EDIT_SerialPort_Response,102,324,48,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_ManualSend,22,335,41,14
+    CONTROL         "",IDC_SerialPort_MSCOMM,
+                    "{648A5600-2C6E-101B-82B6-000000000014}",WS_TABSTOP,119,126,25,23
+    EDITTEXT        IDC_EDIT_StandbyPulseLength,95,260,48,13,ES_AUTOHSCROLL
+    LTEXT           "PulseLength",IDC_STATIC_StandbyPulseLength,27,261,39,9
+    LTEXT           "W",IDC_STATIC_LaserPower_Unit,150,28,8,8
+    LTEXT           "%",IDC_STATIC_LaserSetpoint2,150,43,8,8
+    LTEXT           "Hz",IDC_STATIC_LaserFrequency_Unit,150,57,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit,150,158,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit2,150,186,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit3,150,200,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit4,150,217,8,8
+    LTEXT           "Hz",IDC_STATIC_LaserFrequency_Unit2,150,172,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit5,150,238,8,8
+    LTEXT           "us",IDC_STATIC_HalfPeriod_Unit6,150,262,8,8
+    LTEXT           "Hz",IDC_STATIC_LaserFrequency_Unit3,150,249,8,8
+    PUSHBUTTON      "Accept",IDC_Accept,118,366,31,14
+END
+
+IDD_Bar_CNC DIALOGEX 0, 0, 176, 388
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "定点移动",IDC_STATIC,11,87,151,71
+    LTEXT           "X轴",IDC_STATIC,27,102,16,15
+    LTEXT           "Y轴",IDC_STATIC,27,119,16,15
+    LTEXT           "Z轴",IDC_STATIC,27,137,16,15
+    EDITTEXT        IDC_EDITX2,54,99,41,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITY2,54,117,41,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITZ2,54,135,40,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Move",1012,114,135,33,16
+    PUSHBUTTON      "+",IDC_XPLUS,74,202,28,22,BS_MULTILINE
+    PUSHBUTTON      "-",IDC_XMINUS,44,202,28,22
+    EDITTEXT        IDC_EDITX,103,205,42,15,ES_AUTOHSCROLL
+    GROUPBOX        "连续移动",IDC_STATIC,11,162,151,142
+    LTEXT           "X轴",IDC_STATIC,28,208,16,15
+    PUSHBUTTON      "+",IDC_YPLUS,74,226,28,22
+    PUSHBUTTON      "-",IDC_YMINUS,44,226,28,22
+    EDITTEXT        IDC_EDITY,103,230,42,15,ES_AUTOHSCROLL
+    LTEXT           "Y轴",IDC_STATIC,28,232,16,15
+    PUSHBUTTON      "+",IDC_ZPLUS,74,251,28,22
+    PUSHBUTTON      "-",IDC_ZMINUS,44,251,28,22
+    EDITTEXT        IDC_EDITZ,104,255,42,15,ES_AUTOHSCROLL
+    LTEXT           "Z轴",IDC_STATIC,28,257,16,15
+    CONTROL         "X轴",IDC_CHECK_XHOME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,320,48,16
+    CONTROL         "Y轴",IDC_CHECK_YHOME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,332,48,16
+    CONTROL         "Z轴",IDC_CHECK_ZHOME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,344,48,16
+    PUSHBUTTON      "Home",1013,114,342,33,16
+    GROUPBOX        "回原点",IDC_STATIC,11,308,152,56
+    GROUPBOX        "当前位置",IDC_STATIC,11,12,151,71
+    LTEXT           "X轴",IDC_STATIC,27,27,16,15
+    LTEXT           "Y轴",IDC_STATIC,27,44,16,15
+    LTEXT           "Z轴",IDC_STATIC,27,62,16,15
+    EDITTEXT        IDC_EDITX_POSITION,54,24,41,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITY_POSITION,54,42,41,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITZ_POSITION,54,60,41,15,ES_AUTOHSCROLL
+    CONTROL         "单步",IDC_CHECK_STEP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,180,36,12
+    LTEXT           "单步步距",IDC_STATIC,68,182,33,15
+    PUSHBUTTON      "归零",IDC_BUTTON3,114,279,33,16
+    EDITTEXT        IDC_EDIT_STEPL,103,179,43,15,ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC,98,27,16,15
+    LTEXT           "mm",IDC_STATIC,98,45,16,15
+    LTEXT           "mm",IDC_STATIC,98,62,16,15
+    LTEXT           "mm",IDC_STATIC,97,102,16,15
+    LTEXT           "mm",IDC_STATIC,97,120,16,15
+    LTEXT           "mm",IDC_STATIC,97,137,16,15
+    LTEXT           "mm",IDC_STATIC,149,181,16,15
+    LTEXT           "mm",IDC_STATIC,149,207,16,15
+    LTEXT           "mm",IDC_STATIC,149,233,16,15
+    LTEXT           "mm",IDC_STATIC,149,256,16,15
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 228, 112
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,117,91,50,14
+    PUSHBUTTON      "取消",IDCANCEL,171,91,50,14
+    GROUPBOX        "fill",IDC_STATIC,7,7,156,40
+    GROUPBOX        "outline",IDC_STATIC,7,48,156,40
+    CONTROL         "none",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,24,71,12
+    LTEXT           "weight",IDC_STATIC,19,67,31,11
+    EDITTEXT        IDC_EDIT1,57,64,52,14,ES_AUTOHSCROLL
+    SCROLLBAR       IDC_SCROLLBAR1,109,63,15,14,SBS_VERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_WorkingMode, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 362
+    END
+
+    IDD_Wobbel, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_Processing, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_Automatic, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_Optics, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_Initialization, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_HardwareSettings_ScanHead, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_HardwareSettings, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 363
+    END
+
+    IDD_ParameterSettings, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 363
+    END
+
+    IDD_LaserControl_Settings, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_LaserControl, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 363
+    END
+
+    IDD_LaserControl_Status, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_Draw_TaskList, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 362
+    END
+
+    IDD_Draw, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 549
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 362
+        HORZGUIDE, 362
+    END
+
+    IDD_Bar_ParameterSettings, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 363
+    END
+
+    IDD_Bar_LaserControl_Settings, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 387
+    END
+
+    IDD_Bar_CNC, DIALOG
+    BEGIN
+        RIGHTMARGIN, 173
+        BOTTOMMARGIN, 383
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LaserControl_Settings DLGINIT
+BEGIN
+    IDC_SerialPort_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_LaserControl_Status DLGINIT
+BEGIN
+    IDC_SerialPort_MSCOMM_Status, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_Draw DLGINIT
+BEGIN
+    IDC_Draw_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_Bar_LaserControl_Settings DLGINIT
+BEGIN
+    IDC_SerialPort_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_HELP                ICON                    "res\\icon1.ico"
+IDI_Para                ICON                    "res\\ico00001.ico"
+IDI_LaserControl        ICON                    "res\\ico00002.ico"
+IDI_CNC2000             ICON                    "res\\ico00003.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "                   "
+    BEGIN
+        MENUITEM "properties",                  32793
+        MENUITEM "copy",                        32794
+        MENUITEM "cut",                         32795
+    END
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LaserScan"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "LaserScan, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LaserScan.ico"
+IDR_LaserScanTYPE       ICON                    "res\\LaserScanDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  14, 14
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_DRAW_32788
+    BUTTON      ID_DRAW_LINE
+    BUTTON      ID_DRAW_RECTANGLE
+    BUTTON      ID_DRAW_ELLIPSE
+    BUTTON      ID_DRAW_POLYGON
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LaserScan...",         ID_APP_ABOUT
+    END
+END
+
+IDR_LaserScanTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "Hardware"
+    BEGIN
+        MENUITEM "Laser Control",               ID_HARDWARE_LASERCONTROL
+        MENUITEM "Hardware Settings",           ID_HARDWARE_HARDWARESETTINGS
+        MENUITEM "Working Mode",                ID_HARDWARE_WORKINGMODE
+        MENUITEM "Parameter Settings",          ID_HARDWARE_PARAMETERSETTINGS
+    END
+    POPUP "Operation"
+    BEGIN
+        MENUITEM "Draw",                        ID_OPERATION_DRAW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About LaserScan...",         ID_APP_ABOUT
+    END
+    POPUP "Draw tools"
+    BEGIN
+        MENUITEM "??",                          ID_DRAW_32788
+        MENUITEM "line",                        ID_DRAW_LINE
+        MENUITEM "rectangle",                   ID_DRAW_RECTANGLE
+        MENUITEM "ellipse",                     ID_DRAW_ELLIPSE
+        MENUITEM "polygon",                     ID_DRAW_POLYGON
+    END
+    POPUP "Laser"
+    BEGIN
+        MENUITEM "Implement",                   32796
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "LaserScan.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "LaserScan.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "LaserScan"
+    IDR_LaserScanTYPE       "\nLaserScan\nLaserScan\n\n\nLaserScan.Document\nLaserScan.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "LaserScan"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\LaserScan.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

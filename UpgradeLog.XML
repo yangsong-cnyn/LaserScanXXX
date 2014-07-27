@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="LaserScan">
+</Property><Property Name="解决方案文件" Value="E:\Academic\IIP\LaserScanxxx\LaserScan\LaserScan\LaserScan.sln">
+</Property><Property Name="用户选项文件" Value="E:\Academic\IIP\LaserScanxxx\LaserScan\LaserScan\LaserScan.suo">
+</Property><Property Name="Date" Value="2013年9月15日">
+</Property><Property Name="Time" Value="22:13">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="LaserScan.sln" Description="文件已成功备份为 E:\Academic\IIP\LaserScanxxx\LaserScan\LaserScan\LaserScan.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="LaserScan.suo" Description="文件已成功备份为 E:\Academic\IIP\LaserScanxxx\LaserScan\LaserScan\LaserScan.suo.old">
+</Event><Event ErrorLevel="0" Project="LaserScan" Source="LaserScan.vcproj" Description="Converting project file 'E:\Academic\IIP\LaserScanxxx\LaserScan\LaserScan\LaserScan.vcproj'.">
+</Event><Event ErrorLevel="1" Project="LaserScan" Source="LaserScan.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="LaserScan" Source="LaserScan.vcproj" Description="Done converting to new project file 'E:\Academic\IIP\LaserScanxxx\LaserScan\LaserScan\LaserScan.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="LaserScan" Source="LaserScan.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="LaserScan.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="LaserScan.sln" Description="Converted">
+</Event></UpgradeLog>
